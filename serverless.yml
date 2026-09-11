@@ -1,0 +1,8 @@
+service: event-pipeline
+provider:
+  name: aws
+  runtime: python3.11
+  region: us-east-1
+functions:
+  processEvents:
+    handler: consumer.lambda_handler
